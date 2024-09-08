@@ -3,41 +3,74 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Trade+Winds&display=swap">
         <link rel="stylesheet" href="styles/reset.css">
-        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/side.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <title>FNHA WEBSITE</title>
     </head>
     <body>
-        <header>
-            <img src="images/logo.svg" alt="" class="logo">
-            <nav>
-               
-            </nav>
+        <header class="header">
+           
+                <a href="index.html" title="Homepage"><img src="images/logo.svg" alt="Logo" class="logo"></a>
+                <nav class="nav">
+                   <a href="#about-me" title="banner" class="nav__link" > About Me</a>
+                   <a href="#projects" title="Selected Projects" class="active nav__link"> Projects</a>
+                   <a href="fun-Works.html" title="Desgin and Art Works Archives" class="nav__link">Fun Works</a>
+                   <a href="#contact" title="Contact Info" class="nav__link">Contact</a>
+                </nav>
+            </div>
         </header>
         <main>
-            <h1>FNHA WEBSITE</h1>
-            <h2>A digital platform to promote culturally safe primary health care services for First Nation Health Authority（FNHA).</h2>
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8dZfM8m7YO0?si=SV4-pCndnT0On_5K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <ul>
-                <li>ROLE:Graphic Desinger</li>
-                <li>2024</li>
-                <li>ILLUSTRATOR</li>
-                <li>PHOTOSHOP</li>
-            </ul>
-            <p>The First Nations-led Primary Health Care Initiative is working to develop up to 15 Nations-led Primary Health Care Centres (FNPCCs) in rural and urban locations across BC. Our website is designed to showcase these centres through a cutting-edge medium, allowing the public to learn about the facilities without needing to visit in person. The goal is to encourage First Nations people to feel safe and respected when interacting with the services and visiting FNHA Primary Care Centres.</p>
-            <a href="https://teamcruffin.netlify.app/" title="FNHA WEBSITE LIVE Demo" target="_blank">Live Demo</a>
-            <img src="images/map.gif" >
-            <img src="images/healing-room.svg" >
-            <img src="images/examination-room.svg" >
-            <img src="images/medcine-room.svg" >
-            <img src="images/pharmacy.svg" >
-            <img src="images/consulting-room.svg" >
-            <img src="images/" >
-            <img src="images/" >
-            <img src="images/" >
+            <div class="container">
+                <h1>FNHA WEBSITE</h1>
+                <h2 class="discription">A digital platform to promote culturally safe primary health care services for First Nation Health Authority（FNHA).</h2>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8dZfM8m7YO0?si=SV4-pCndnT0On_5K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <ul class="key-words">
+                    <li class="role">ROLE:Graphic Desinger</li>
+                    <li>2024</li>
+                    <li>ILLUSTRATOR</li>
+                    <li>PHOTOSHOP</li>
+                </ul>
+                <p>The First Nations-led Primary Health Care Initiative is working to develop up to 15 Nations-led Primary Health Care Centres (FNPCCs) in rural and urban locations across BC. Our website is designed to showcase these centres through a cutting-edge medium, allowing the public to learn about the facilities without needing to visit in person. The goal is to encourage First Nations people to feel safe and respected when interacting with the services and visiting FNHA Primary Care Centres.</p>
+                <a href="https://teamcruffin.netlify.app/" title="FNHA WEBSITE LIVE Demo" target="_blank">Live Demo</a>
+                <img src="images/map.gif" >
+                <img src="images/healing-room.svg" >
+                <img src="images/examination-room.svg" >
+                <img src="images/medcine-room.svg" >
+                <img src="images/pharmacy.svg" >
+                <img src="images/consulting-room.svg" >
+                <img src="images/" >
+                <img src="images/" >
+                <img src="images/" >
+            </div>
 
 
 
         </main>
         <footer></footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          
+          {
+            const header = document.querySelector(".header");
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener("scroll", () => {
+              if (lastScrollY < window.scrollY) {
+                header.classList.add("header--hidden");
+              } else {
+                header.classList.remove("header--hidden");
+              }
+
+              lastScrollY = window.scrollY;
+            });
+          }
+
+          AOS.init();
+
+        </script>
+    </body>
+</html>
