@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
 
 *{
     margin: 0;
@@ -20,11 +20,19 @@ body{
     overflow-x: hidden;   
     background-color: #fbf8f5;
 }
+a {
+    text-decoration: none;
+}
 
 .is-flex {
     display: flex;
 }
 
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 /*----------------------------------
 // Global Navigation
 ----------------------------------*/
