@@ -32,9 +32,9 @@
                     <li>HTML | CSS</li>
                     <li>PHOTOSHOP</li>
                 </ul>
-                <p class="description">The First Nations-led Primary Health Care Initiative is working to develop up to 15 Nations-led Primary Health Care Centres (FNPCCs) in rural and urban locations across BC. Our website is designed to showcase these centres through a cutting-edge medium, allowing the public to learn about the facilities without needing to visit in person. The goal is to encourage First Nations people to feel safe and respected when interacting with the services and visiting FNHA Primary Care Centres.</p>
+                <p class="description">Our team CCCA, developed Steveston Life, a life simulation game designed to engage players and promote interest in fishing history through interactive and educational experiences. Players can earn points in-game for discounts at the gift shop, encouraging visits to the cannery site. The website serves as a platform for game-related merchants and special offers.</p>
 
-                <a href="https://imclairegao.github.io/Steveston-Cannery/" title="FNHA WEBSITE Live Demo" target="_blank" class="link">
+                <a href="https://imclairegao.github.io/Steveston-Cannery/" title="Stevenson Life Live Demo" target="_blank" class="link">
                   <span class="mask">
                     <div class="link-container">
                       <span class="link-title1 title">LIVE DEMO</span>
@@ -50,3 +50,40 @@
                     </svg>
                   </div>
                 </a>
+
+                <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
+                        <img src="images/sl-map.png" width="1240px" >
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1400" data-aos-once="true">
+                        <img src="images/sl-all.png" width="1240px" >
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          
+          {
+            const header = document.querySelector(".header");
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener("scroll", () => {
+              if (lastScrollY < window.scrollY) {
+                header.classList.add("header--hidden");
+              } else {
+                header.classList.remove("header--hidden");
+              }
+
+              lastScrollY = window.scrollY;
+            });
+          }
+
+          AOS.init();
+
+        </script>
+    </body>
+</html>
