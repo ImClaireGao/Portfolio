@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-CA">
     <head>
         <meta charset="utf-8">
@@ -9,24 +9,26 @@
         <link rel="stylesheet" href="styles/reset.css">
         <link rel="stylesheet" href="styles/side.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <title>Stevenson Life Gift shop</title>
+        <title>Energetic Curve Line</title>
     </head>
     <body>
         <header class="header">           
                 <a href="index.html" title="Homepage"><img src="images/logo.svg" alt="Logo" class="logo"></a>
                 <nav class="nav">
-                   <a href="#about-me" title="banner" class="nav__link" > About Me</a>
-                   <a href="#projects" title="Selected Projects" class="active nav__link"> Projects</a>
-                   <a href="fun-Works.html" title="Desgin and Art Works Archives" class="nav__link">Fun Works</a>
-                   <a href="#contact" title="Contact Info" class="nav__link">Contact</a>
+                   <a href="fnha-website.html" title="FNHA Website" class="nav__link" > Project1</a>
+                   <a href="digital-sandtray-therapy.html" title="Digital Sandrtay" class="nav__link"> Project2</a>
+                   <a href="stevenson-life-gift-shop.html" title="Stevenson Life Gift shop" class="nav__link">Project3</a>
+                   <a href="energetic-curve-line.html" title="Energetic Curve Line" class="active nav__link">Project4</a>
                 </nav>
             </div>
         </header>
         <main>
             <div class="container">
-                <h1>Energetic Curve Line</h1>
-                <h2>Skateboarding has officially debuted as an Olympic sport at the Olympic Games in 2021, inspiring the creation of a skateboarding theme park designed with vibrant colors and dynamic curves.</h2>
-                <img src="images/5.png" alt="Masterplan" width="1440px">
+                <div class="slider">
+                    <h1 class="slider" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">Energetic Curve Line</h1>
+                    <h2 class="slider" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1200" data-aos-once="true">Skateboarding has officially debuted as an Olympic sport at the Olympic Games in 2021, inspiring the creation of a skateboarding theme park designed with vibrant colors and dynamic curves.</h2>
+                </div>
+                <img src="images/31.png" alt="cover" width="1240px">
                 <ul class="key-words">
                     <li class="role">ROLE: Graphic Designer | 3D Artist</li>
                     <li>2021</li>
@@ -35,4 +37,55 @@
                     <li>PHOTOSHOP</li>
                     <li>Indesign</li>
                 </ul>
-                <p class="description">The First Nations-led Primary Health Care Initiative is working to develop up to 15 Nations-led Primary Health Care Centres (FNPCCs) in rural and urban locations across BC. Our website is designed to showcase these centres through a cutting-edge medium, allowing the public to learn about the facilities without needing to visit in person. The goal is to encourage First Nations people to feel safe and respected when interacting with the services and visiting FNHA Primary Care Centres.</p>
+                <p class="description">Energetic Curve Line is a vibrant skateboarding theme park designed with dynamic curves and bold colors. Inspired by the sport's inclusion in the 2016 Olympics, the park caters to the growing demand for skateboarding venues. It features three sections with varying difficulty levels, heights, and facilities to accommodate different skill levels. At both the entrance and exit, there are adaptable areas for beginners and experienced skaters, all connected by winding paths. The park includes essential amenities like skateboard rentals, pads, shaded porches, public toilets, and abundant green spaces, creating a welcoming environment for skaters.</p>
+
+                <div class="card">                    
+                    <div class="card" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
+                        <img src="images/skatepark/34.png" width="1240px" >
+                    </div>
+                    <div class="card" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1200" data-aos-once="true">
+                        <img src="images/skatepark/33.png" width="1240px" >
+                    </div>
+                    <div class="card" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1400" data-aos-once="true">
+                        <img src="images/skatepark/35.png" width="1240px" >
+                    </div>
+                    <div class="card" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1600" data-aos-once="true">
+                        <img src="images/skatepark/36.png" width="1240px" >
+                    </div>
+                    <div class="card" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1800" data-aos-once="true">
+                        <img src="images/skatepark/37.png" width="1240px" >
+                    </div>
+                    <div class="card" data-aos="fade-right" data-aos-delay="600" data-aos-duration="2000" data-aos-once="true">
+                        <img src="images/skatepark/38.png" width="1240px" >
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+        <footer>
+            
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          
+          {
+            const header = document.querySelector(".header");
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener("scroll", () => {
+              if (lastScrollY < window.scrollY) {
+                header.classList.add("header--hidden");
+              } else {
+                header.classList.remove("header--hidden");
+              }
+
+              lastScrollY = window.scrollY;
+            });
+          }
+
+          AOS.init();
+
+        </script>
+    </body>
+</html>
