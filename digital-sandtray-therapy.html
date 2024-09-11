@@ -15,17 +15,19 @@
         <header class="header">           
                 <a href="index.html" title="Homepage"><img src="images/logo.svg" alt="Logo" class="logo"></a>
                 <nav class="nav">
-                   <a href="#about-me" title="banner" class="nav__link" > About Me</a>
-                   <a href="#projects" title="Selected Projects" class="active nav__link"> Projects</a>
-                   <a href="fun-Works.html" title="Desgin and Art Works Archives" class="nav__link">Fun Works</a>
-                   <a href="#contact" title="Contact Info" class="nav__link">Contact</a>
+                   <a href="fnha-website.html" title="FNHA Website" class="nav__link" > Project1</a>
+                   <a href="digital-sandtray-therapy.html" title="Digital Sandrtay" class="active nav__link"> Project2</a>
+                   <a href="stevenson-life-gift-shop.html" title="Stevenson Life Gift shop" class="nav__link">Project3</a>
+                   <a href="energetic-curve-line.html" title="Energetic Curve Line" class="nav__link">Project4</a>
                 </nav>
             </div>
         </header>
         <main>
             <div class="container">
-                <h1>Digital Sandrtay</h1>
-                <h2>Digital therapy solution for BC Children’s hospital (BCCH) Digital Lab, replicating the creative experience of a physical sandtray.</h2>
+                <div class="slider">
+                    <h1 class="slider" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">Digital Sandrtay</h1>
+                    <h2 class="slider" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1200" data-aos-once="true">Digital therapy solution for BC Children’s hospital (BCCH) Digital Lab, replicating the creative experience of a physical sandtray.</h2>
+                </div>
                 <iframe class="player" src="https://www.youtube-nocookie.com/embed/GJE4vTlrfdM?si=BB21tJz3qqEefnsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <ul class="key-words">
                     <li class="role">ROLE: 3D Artist</li>
@@ -53,6 +55,33 @@
                   </div>
                 </a>
 
-              <div class="card">
-                <iframe frameborder="0" src="https://itch.io/embed-upload/11431729?color=333333" allowfullscreen="" class="player"><a href="https://diggity39.itch.io/sandscape">Play Sandscape on itch.io</a></iframe>
+              
             </div>
+        </main>
+        <footer>
+            
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          
+          {
+            const header = document.querySelector(".header");
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener("scroll", () => {
+              if (lastScrollY < window.scrollY) {
+                header.classList.add("header--hidden");
+              } else {
+                header.classList.remove("header--hidden");
+              }
+
+              lastScrollY = window.scrollY;
+            });
+          }
+
+          AOS.init();
+
+        </script>
+    </body>
+</html>
+
