@@ -7,7 +7,8 @@
     text-decoration: none;
     border: none;
     outline: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
+    line-height: 1.2;
 }
 
 html{
@@ -20,17 +21,15 @@ body{
     overflow-x: hidden;   
     background-color: #fbf8f5;
 }
-a {
-    text-decoration: none;
-}
+
 
 .is-flex {
     display: flex;
 }
 
 
-.container {
-    max-width: 1200px;
+.theme-wrapper {
+    max-width: 1240px;
     margin: 0 auto;
 }
 /*----------------------------------
@@ -53,7 +52,7 @@ header{
 }
 
 .logo{
-    width: 5%;
+    width: 4%;
     cursor: pointer;
     transition: 0.5s ease;
 }
@@ -110,7 +109,9 @@ nav a.active{
     }
 }
 
-section{
+
+
+.home {
     min-height: 100vh;
     padding: 5rem 9% 5rem;
 }
@@ -251,13 +252,45 @@ span{
 /*----------------------------------
 // Projects
 ----------------------------------*/
+li .works .is-flex {
+    align-content: center;
+}
+
+
 .project-img img {
-    width: 50%;
+    border-radius: 2.5rem;
+
+}
+
+.projects li {
+    margin-bottom: 10rem;
+}
+
+.project-info {
+    width: 40%;
+    margin-left: 5rem;
+    align-content: center;
 
 }
 
 
+.project-info h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
 
+.project-info h4 {
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+
+.project-info p {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
 
 /* CSS */
 .button-56 {
@@ -269,7 +302,7 @@ span{
   color: #111;
   cursor: pointer;
   display: flex;
-  font-family: Inter,sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 16px;
   height: 48px;
   justify-content: center;
@@ -319,20 +352,57 @@ span{
 }
 
 
-
-
-
-
-
-
-
 /*----------------------------------
-// Fun Works
+// Contact
 ----------------------------------*/
+.is-flex a {
+    align-content: center;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1);
+}
+
+.social-icon li img {
+    margin-right: 30px;
+}
 
 /*----------------------------------
 // Footer
 ----------------------------------*/
+.ftr {
+    padding-top: 3rem;
+    padding-bottom: 1.8rem;
+}
+
+.ftr p {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.ftr a {
+    color: balck;
+    font-size: 1.5rem;
+}
+
+
+.long-ftr {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*----------------------------------
+// Footer
+----------------------------------*/
+
+
+
 
 .social-icons a:hover{
     color: black;
