@@ -273,6 +273,11 @@ li .works .is-flex {
 
 }
 
+h2 {
+    font-size: 55px;
+    margin-bottom: 24px;
+}
+
 
 .project-info h3 {
     font-size: 3rem;
@@ -292,7 +297,7 @@ li .works .is-flex {
     margin-bottom: 1.5rem;
 }
 
-/* CSS */
+/* button */
 .button-56 {
   align-items: center;
   background-color: #fee6e3;
@@ -513,6 +518,7 @@ li .works .is-flex {
   margin-bottom: 60px;
   margin-left: 0px;
   background-color: #8ab7e2;
+  border-radius: 1rem;
 }
 
 .arch_contact_us_duplicate .form-wrapper {
@@ -543,18 +549,18 @@ li .works .is-flex {
     align-content: center;
 }
 
-.icon-78 {
+.container-78 {
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: #8ab7e2;
 }
 
 
-.icon-78 img {
+.container-78 img {
     width: 12%;
 }
 
-.icon-78 li {
+.container-78 li {
     margin-bottom: 3rem;
 }
 
@@ -562,18 +568,21 @@ li .works .is-flex {
     margin-right: 35px;
 }
 
-.list-item span {
+.list-item .sml-heading {
     font-size: 2rem;
-    margin-top: 20px;
+    align-content: center;
+    color: black;
 }
 
-.icon-99 img:hover {
-    transform: scale(1.1);
+
+.social-media-icon-container img:hover {
+    transform: scale(1.2);
 } 
 
 .email {
     margin-bottom: 20px;
 }
+
 
 @media (max-width: 1024px) {
   .arch_contact_us_duplicate .text-blk.section-head {
@@ -951,13 +960,11 @@ body {
 .long-ftr {
     display: flex;
     align-items: center;
-    flex-basis: calc(100% - 177px);
+    flex-basis: calc(100% - 120px);
     justify-content: flex-end;
 }
 
-/*----------------------------------
-// Footer
-----------------------------------*/
+
 
 
 
