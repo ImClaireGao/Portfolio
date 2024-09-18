@@ -258,12 +258,26 @@ li .works .is-flex {
 
 
 .project-img img {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     border-radius: 2.5rem;
+}
 
+.project-img figure img {
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+
+
+.project-img figure:hover img {
+    transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .projects li {
     margin-bottom: 10rem;
+    overflow: hidden;
+    position: relative;
 }
 
 .project-info {
