@@ -55,9 +55,6 @@ header{
     z-index: 100;
 }
 
-.gn-container {
-    max-width: 1240px;
-}
 
 .logo{
     width: 4%;
@@ -145,7 +142,6 @@ nav a.active{
 
 .banner-bg {
     position: relative;
-
 }
 
 .home-content {
@@ -193,93 +189,11 @@ span{
 
 
 /*----------------------------------
-// Home_About Me
-
-
-.social-icons a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    background-color: transparent;
-    border: 0.2rem solid #b74b4b;
-    font-size: 2rem;
-    border-radius: 50%;
-    margin: 3rem 1.5rem 3rem 0;
-    transition: 0.3s ease;
-    color: #b74b4b;
-}
-
-
-.btn{
-    margin-top: 3rem;
-    display: inline-block;
-    padding: 1rem 1.8rem;
-    background-color: #fff;
-    border-radius: 16px;
-    font-size: 1.6rem;
-    color: #e8622f;
-    letter-spacing: 0.3rem;
-    font-weight: 600;
-    border: 2px solid #e8622f;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-
-.btn:hover{
-    transform: scale3d(1.03);
-    background-color: #b74b4b;
-    color: #fff;
-    box-shadow: 0 0 25px #b74b4b;
-}
-
-.typing-text{
-    font-size: 34px;
-    font-weight: 600;
-    min-width: 280px;
-}
-
-.typing-text span{
-    position: relative;
-}
-
-.typing-text span::before{
-    content: "Designer";
-    color: #b74b4b;
-    animation: words 20s infinite;
-}
-
-.typing-text span::after{
-    content: "";
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid #fff;
-    right: -8;
-    animation: cursor 0.6s infinite;
-}
-
-@keyframes cursor{
-    to{
-        border-left: 3px solid #b74b4b;
-    }
-}
-
-@keyframes words{
-    0%, 20%{
-        content: "Graphic Designer";
-    }
-    21%, 40%{
-        content: "Web Designer";
-    }
-}
-
-
 // Projects
 ----------------------------------*/
 #projects {
     margin-top: 20rem;
+    height: 1190px;
 }
 
 .project-grid {
@@ -355,6 +269,10 @@ h2 {
     padding-top: 2rem;
     padding-bottom: 1.8rem;
 }
+.ftr-container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
 
 .ftr p {
     color: #fff;
@@ -366,17 +284,21 @@ h2 {
     font-size: 1.5rem;
 }
 
-.email a {
-    font-weight: 700;
-    font-size: 1.5rem;
-    align-items: center;
+.ftr-right {
+    flex-basis: calc(100% - 350px);
+    display: flex;
+    justify-content: flex-end;
 }
 
+.ftr-right .social-icons {
+    display: flex;
 
-.copyright {
-    flex-basis: calc(100% - 268px);
-    display: flex; 
-    justify-content: flex-end;
+.ftr-right img {
+    margin-left: 2rem;
+}
+
+.ftr-right .email a {
+    font-weight: 700;
+    font-size: 2rem;
     align-items: center;
-
 }
