@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Trade+Winds&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Space+Grotesk:wght@300..700&display=swap" >
         <link rel="icon" type="image/svg" href="images/favicon.svg">
         <link rel="stylesheet" href="styles/reset.css">
         <link rel="stylesheet" href="styles/main.css">
-        <title>Claire's Portfolio</title>
+        <title>Claire Gao</title>
     </head>
     <body>
         <div class="theme-wrapper">
@@ -19,139 +19,88 @@
                     <a href="#about-me" title="banner" class="active"> About Me</a>
                     <a href="#projects" title="Selected Projects">Projects</a>
                     <a href="fun-Works.html" title="Desgin and Art Works Archives">Gallery</a>
-                    <a href="#contact" title="Contact Info">Contact</a>
+                    <a href="#contact" title="Resume Download">Resume</a>
                 </nav>
             </header>
-            <main>
+            <main class="container">
                 <section id="about-me" class="home">
-                    <div class="home-content">
-                        <h1>Hi, It's <span>Claire Gao</span></h1>
-                        <h3 class="typing-text">I'm a <span></span></h3>
-                        <!---<p>A passionate web designer and Graphic Designer
-                        <br>based in Vancouver,BC </p>--->
-                        <a href="" class="btn">Download CV</a>                                        
+                    <div class="banner-bg">
+                        <img src="images/banner-bg02.png" width="900px">
+                        <div class="home-content">
+                            <h1>Hi, I'm <span>Claire Gao</span></h1>
+                            <h3>a graphic designer and web designer based in Vancouver, CA.</h3>
+                            <h3 class="bio">With 4 years of experience in visual design, I always embrace the concept of “thinking globally and acting locally”.</h3>
+                            <!---<h3 class="typing-text">I'm a<span></span></h3>--->                                     
+                        </div>
                     </div>
+                        <p class="proj-heading">Selected Project</svg></p>
                 </section>
                 <section id="projects" class="projects">
-                    <h2 class="large-title">Selected Projects</h2>
-                    <ul id="zoom-in">
-                        <li class="works is-flex">
-                            <div class="project-img">
-                                <img src="images/cover/01.png" width="600px">
-                            </div>
-                            <div class="project-info">
-                                <h3>FNHA Website</h3>
-                                <h4>2024 | Graphic Designer</h4>
-                                <p>A digital platform to promote culturally safe primary health care services for First Nation Health Authority（FNHA).</p>
-                                <a href="fnha-website.html">
-                                 <button class="button-56" role="button">MORE</button>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="works is-flex">
+                    <ul class="project-grid">
+                        <li class="works">
                             <div class="project-img">
                                 <a href="fnha-website.html">
-                                    <figure><img src="images/cover/01.png" width="600px"></figure>
+                                    <img src="images/cover/01.png" width="560px">
                                 </a>
                             </div>
                             <div class="project-info">
-                                <h3>FNHA Website</h3>
-                                <h4>2024 | Graphic Designer</h4>
-                                <p>A digital platform to promote culturally safe primary health care services for First Nation Health Authority（FNHA).</p>
+                                
+                                <h3>A digital platform to promote culturally safe primary health care services for for First Nation Health Authority.</h4>
+                                <h4>FNHA Website</h3>
                             </div>
                         </li>
-                        <li class="works is-flex">
+                        <li class="works">
                             <div class="project-img">
-                                <img src="images/cover/05.png" width="600px">
-                            </div>
-                            <div class="project-info">
-                                <h3>Digital Sandtray Therapy</h3>
-                                <h4>2024 | 3D Artist</h4>
-                                <p>Digital therapy for BC Children’s hospital (BCCH) Digital Lab, replicating the creative experience of a physical sandtray.</p>
-                                <a href="digital-sandtray-therapy.html">
-                                 <button class="button-56" role="button">MORE</button>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="works is-flex">
-                            <div class="project-img">
-                                <img src="images/cover/03.png" width="600px">
-                            </div>
-                            <div class="project-info">
-                                <h3>Stevenson Life Gift Shop</h3>
-                                <h4>2023| Web Designer</h4>
-                                <p>A digital platform to promote the Stevenson Cannery historical site, featuring contents from the simulation game Stevenson Life.</p>
                                 <a href="stevenson-life-gift-shop.html">
-                                 <button class="button-56" role="button">MORE</button>
+                                    <img src="images/cover/03.png" width="560px">
                                 </a>
                             </div>
+                            <div class="project-info">
+                                <h3>A digital platform to promote the Stevenson Cannery historical site.</h3>
+                                <h4>Stevenson Life Gift Shop</h4>
+                            </div>
                         </li>
-                        <li class="works is-flex">
+                        <li class="works">
                             <div class="project-img">
-                                <img src="images/cover/06.png" width="600px">
+                                <a href="digital-sandtray-therapy.html">
+                                    <img src="images/cover/05.png" width="560px">
+                                </a>
+                            </div>
+                            <div class="project-info">
+                                <h3>Digital therapy solution for BC Children’s hospital (BCCH) Digital Lab.</h3>
+                                <h4>Digital Sandtray Therapy</h4>
+                            </div>
+                        </li>
+                        <li class="works">
+                            <div class="project-img">
+                                <a href="energetic-curve-line.html">
+                                    <img src="images/cover/06.png" width="560px">
+                                </a>
                             </div>    
                             <div class="project-info">
-                                <h3>Energetic Curve Line</h3>
-                                <h4>2021 | Graphic Designer | 3D Artist</h4>
-                                <p>Skateboarding has officially debuted as an Olympic sport at the Olympic Games in 2021, inspiring the creation of a skateboarding theme park designed with vibrant colors and dynamic curves.</p>
-                                <a href="energetic-curve-line.html">
-                                      <button class="button-56" role="button">MORE</button>
-                                </a>                            
+                                
+                                <h3>Designing a skateboard theme park, inspired by skateboarding's debut at the 2021 Olympic Games.</h3>
+                                <h4>Energetic Curve Line</h4>                           
                             </div>
                         </li>
                     </ul>  
-                </section>
-                <section id="contact" class="contact">
-                     <div class="arch_contact_us_duplicate">
-                       <div class="responsive-container-block big-container">
-                         <div class="responsive-container-block container">
-                           <div class="responsive-cell-block wk-mobile-12 wk-desk-5 wk-tab-10 wk-ipadp-5" id="ih6s">
-                             <p class="text-blk section-head">
-                               Get in touch
-                             </p>
-                             <div class="form-wrapper">
-                               <input class="input input-element" name="Name" placeholder="Name">
-                               <input class="input input-element" name="Email" placeholder="Email">
-                               <textarea class="textinput input-element" placeholder="Message"></textarea>
-                               <button class="button">
-                                 Send
-                               </button>
-                             </div>
-                           </div>
-
-                           <div class="responsive-cell-block wk-ipadp-6 wk-mobile-12 wk-desk-5 wk-tab-9" id="i6df">
-                            <ul class="container-78">
-                                <li class="list-item is-flex"> 
-                                    <img src="images/location.svg" >
-                                    <span class="sml-heading">Vancouver, BC </span>
-                                </li>
-                                <li class="list-item is-flex"> 
-                                    <img src="images/phone.svg" >
-                                    <a href="tel:+1-236-308-2539" title="Give me a call" class="sml-heading">(236)308-2539</a>
-                                </li>
-                                <li class="list-item is-flex">
-                                    <img src="images/email.svg" >
-                                    <a href="mailto:claire.gao47@gmail.com" title="Send me an email" class="sml-heading">claire.gao47@gmail.com</a>
-                                </li>
-                            </ul>
-                             
-                             <div class="social-media-icon-container">
-                               <div class="icon-block social-icon">
-                                 <a href="https://www.linkedin.com/in/claire-siqi-gao-70b4151b2/" title="Find me on Linkedin" target="_blank" ><img src="images/linkedin.svg" alt=" Linkdein icon" width="50px"></a>
-                               </div>
-                               <div class="icon-block social-icon">
-                                 <a href="https://github.com/ImClaireGao" title="Find me on Github" target="_blank"><img src="images/github.svg" alt="Github icon" width="55px"></a>
-                               </div>
-                             </div>
-                           </div>
-                         </div>
-                       </div>
-                     </div>
                 </section>                
             </main>
-            <footer class="ftr is-flex">
-                <p>Copyright&copy;<strong>2024</strong></p>
-                <p class="long-ftr">Site Design & Developed by<strong><a href="https://github.com/ImClaireGao/Portfolio" title="Github page" target="_blank">Claire Gao</a></strong></p>   
+            <footer class="ftr">
+                <div class="container is-flex"> 
+                    <div class="social-icon is-flex">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/claire-siqi-gao-70b4151b2/" title="Find me on Linkedin" target="_blank" ><img src="images/linkedin.svg" alt=" Linkdein icon" width="40px"></a></li>
+                            <li><a href="https://github.com/ImClaireGao" title="Find me on Github" target="_blank"><img src="images/github.svg" alt="Github icon" width="45px"></a></li>
+                        </ul>
+                    </div>
+                    <div class="email">
+                        <a href="mailto:claire.gao47@gmail.com" title="Send me an email">claire.gao47@gmail.com</a>
+                    </div>
+                    <div class="copyright">
+                        <p>&copy;Sep 2024 | Site Design & Develope by<strong><a href="https://github.com/ImClaireGao/Portfolio" title="Github page" target="_blank">Claire Gao</a></strong></p>
+                    </div>
+                </div>   
             </footer>
             <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
             <script>
