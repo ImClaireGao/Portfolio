@@ -20,6 +20,13 @@ body{
     height: 100vh;
     overflow-x: hidden;   
     background-color: #fbf8f5;
+    /*-------
+    min-height: 100%; 
+    margin: 0;
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    background-repeat: no-repeat;  
+    background-size: cover; 
+    -------*/
 }
 
 
@@ -36,6 +43,40 @@ body{
     max-width: 1200px;
     margin: 0 auto;
 }
+
+/*----------------------------------
+// Footer-right
+----------------------------------*/
+.ftr-right img {
+    margin-left: 2.2rem;
+}
+
+.ftr-right img:hover {
+    transform: scale(1.1);
+}
+
+.ftr-right .social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.ftr-right .email {
+    display: flex;
+    align-items: center;
+    color: #fff; 
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.ftr-right .email:hover {
+    transform: scale(1.1);
+}
+
+.copyright strong:hover {
+    transform: scale(1.1);
+}
+
 /*----------------------------------
 // Global Navigation
 ----------------------------------*/
@@ -279,9 +320,11 @@ h2 {
     font-size: 1.5rem;
 }
 
-.ftr a {
+.copyright strong {
     color: #fff; 
     font-size: 1.5rem;
+    font-weight: 700;
+    font-family: "IBM Plex Mono", monospace;
 }
 
 .ftr-right {
@@ -293,12 +336,3 @@ h2 {
 .ftr-right .social-icons {
     display: flex;
 
-.ftr-right img {
-    margin-left: 2rem;
-}
-
-.ftr-right .email a {
-    font-weight: 700;
-    font-size: 2rem;
-    align-items: center;
-}
