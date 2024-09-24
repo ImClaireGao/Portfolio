@@ -20,6 +20,7 @@ body{
     height: 100vh;
     overflow-x: hidden;   
     background-color: #fbf8f5;
+    min-width: 320px;
     /*-------
     min-height: 100%; 
     margin: 0;
@@ -98,7 +99,7 @@ header{
 
 
 .logo{
-    width: 4%;
+    width: 18%;
     cursor: pointer;
     transition: 0.5s ease;
 }

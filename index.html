@@ -14,11 +14,13 @@
     <body>
         <div class="theme-wrapper">
             <header>
-                <img src="images/logo.svg" alt="" class="logo">
+                <a href="index.html" title="Homepage">
+                    <img src="images/logo.svg" alt="Logo" class="logo">
+                </a>
                 <nav>
                     <a href="#about-me" title="banner" class="active"> About Me</a>
                     <a href="#projects" title="Selected Projects">Projects</a>
-                    <a href="fun-Works.html" title="Desgin and Art Works Archives">Gallery</a>
+                    <a href="gallery.html" title="Desgin and Art Works Archives">Gallery</a>
                     <a href="#contact" title="Resume Download">Resume</a>
                 </nav>
             </header>
@@ -39,7 +41,7 @@
                     <ul class="project-grid">
                         <li class="works">
                             <div class="project-img">
-                                <a href="fnha-website.html">
+                                <a href="fnha.html">
                                     <img src="images/cover/01.png" width="560px">
                                 </a>
                             </div>
@@ -89,7 +91,7 @@
                 <div class="ftr-container is-flex"> 
                     <div class="copyright">
                         <p>&copy; Sep 2024 <a href="index.html" title="To Homepage"><strong>Claire Gao</strong></a> 
-                        <br>Site Design & Develope by <a href="https://github.com/ImClaireGao/Portfolio" title="Github page" target="_blank"><strong>Claire Gao</strong></a></p>
+                        <br>Site Designed & Developed by <a href="https://github.com/ImClaireGao/Portfolio" title="Github page" target="_blank"><strong>Claire Gao</strong></a></p>
                     </div>
                     <div class="ftr-right">
                         <a href="mailto:claire.gao47@gmail.com" title="Send me an email" class="email">claire.gao47@gmail.com</a>
@@ -100,34 +102,6 @@
                     </div>
                 </div>   
             </footer>
-            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-            <script>
-              
-              {
-                const header = document.querySelector(".header");
-                let lastScrollY = window.scrollY;
-
-                window.addEventListener("scroll", () => {
-                  if (lastScrollY < window.scrollY) {
-                    header.classList.add("header--hidden");
-                  } else {
-                    header.classList.remove("header--hidden");
-                  }
-
-                  lastScrollY = window.scrollY;
-                });
-              }
-
-              AOS.init();
-
-              document.querySelector('#contact-form').addEventListener('submit', (e) => {
-                  e.preventDefault();
-                  e.target.elements.name.value = '';
-                  e.target.elements.email.value = '';
-                  e.target.elements.message.value = '';
-                });
-
-            </script>
         </div>
     </body>
 </html>
