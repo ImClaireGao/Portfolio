@@ -116,7 +116,7 @@ nav {
 
 nav a{
     font-size: 1.9rem;
-    color: #3c2e3d;;
+    color: #3c2e3d;
     margin-left: 4rem;
     font-weight: 700;
     transition: 0.3s ease;
@@ -133,15 +133,13 @@ nav a.active{
 @media(max-width:995px){
     nav{
         position: absolute;
-        display: ;
-        top: 0;
+        display: grid;
+        top: -30px;
         right: 0;
-        width: 40%;
-        border-left: 3px solid #5895df;
-        border-bottom: 3px solid #5895df;
-        border-bottom-left-radius: 2rem;
-        padding: 1rem solid;
-        background-color: #ff7d00;
+        width: 0%;
+        border-left: 0px solid #5895df;
+        border-bottom: 0px solid #5895df;
+        padding: 1rem;
         border-top: 0.1rem solid rgba(0,0,0,0.1);
     }
 
@@ -159,7 +157,7 @@ nav a.active{
     nav a.active{
         padding: 1rem;
         border-radius: 0.5rem;
-        border-bottom: 0.5rem solid #b74b4b;
+        border-bottom: 0.5rem solid #5895df;
     }
 }
 
@@ -246,16 +244,21 @@ li .works .is-flex {
     align-content: center;
 }
 
+.project-img {
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 15px;
+    width: 95%;
+}
 
 .project-img img {
     cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    border-radius: 15px;
+    overflow: hidden;
 }
 
-.project-img figure img {
-    transform: scale(1);
-    transition: .3s ease-in-out;
+.project-img:hover img {
+    transform: scale(1.25);
+    transition: .5s ease-in-out;
 }
 
 
