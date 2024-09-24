@@ -18,8 +18,11 @@ html{
 body{
     width: 100%;
     height: 100vh;
-    overflow-x: hidden;   
+    overflow-x: hidden;  
     background-color: #fbf8f5;
+    background-image: linear-gradient(0deg, #fbf8f5 0%, #e3eeff 33%, #e3eeff 66%, #e3eeff 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
     min-width: 320px;
     /*-------
     min-height: 100%; 
