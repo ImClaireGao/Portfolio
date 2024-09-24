@@ -15,9 +15,10 @@ html{
 
 body{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     overflow-x: hidden;   
     background-color: #fbf8f5;
+    padding-top: 120.5px;
 }
 
 
@@ -27,7 +28,7 @@ body{
 
 
 .theme-wrapper {
-    height: 100vh;
+    height: 90vh;
 }
 
 .container {
@@ -41,13 +42,10 @@ body{
 }
 
 main {
-    margin-top: 120px;
+    min-height: calc(100% - 83.8px - 115.5px);
     
 }
 
-.min-page {
-    min-height: calc(100vh - 177.5px);
-}
 
 h1 {
     text-transform: uppercase;
@@ -109,7 +107,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 9999;
 }
 
 
@@ -330,11 +328,13 @@ nav a.active{
 // Footer
 ----------------------------------*/
 .ftr {
-    position:absolute;
     background-color: #3c2e3d;
     padding-top: 2rem;
     padding-bottom: 1.8rem;
+    position: sticky;
+    top: 100%;
 }
+
 .ftr-container {
     max-width: 1240px;
     margin: 0 auto;
