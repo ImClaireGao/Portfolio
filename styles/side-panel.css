@@ -37,7 +37,7 @@ body{
 }
 
 main {
-     min-height: calc(100% - 83.8px - 120.5px);
+    min-height: calc(100% - 83.8px - 120.5px);
 }
 
 h1 {
@@ -47,7 +47,10 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    padding: 2rem 0;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-right: 0;
+    padding-right: 0;
 }
 
 
@@ -84,6 +87,14 @@ h2 {
     transform: scale(1.1);
 }
 
+section img {
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+}
+
 
 /*----------------------------------
 // Global Navigation
@@ -95,7 +106,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 6.5%;
+    padding: 1rem 9%;
     background-color: transparent;
     filter: drop-shadow(10px);
     display: flex;
