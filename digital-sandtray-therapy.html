@@ -5,107 +5,165 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Trade+Winds&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Space+Grotesk:wght@300..700&display=swap" >
+        <link rel="icon" type="image/svg" href="images/favicon.svg">
         <link rel="stylesheet" href="styles/reset.css">
-        <link rel="stylesheet" href="styles/side.css">
+        <link rel="stylesheet" href="styles/side-panel.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <title>Digital Sandrtay</title>
+        <title>Digital Sandtray therapy</title>
     </head>
     <body>
-        <header class="header">           
-                <a href="index.html" title="Homepage"><img src="images/logo.svg" alt="Logo" class="logo"></a>
-                <nav class="nav">
-                   <a href="fnha-website.html" title="FNHA Website" class="nav__link" > Project1</a>
-                   <a href="digital-sandtray-therapy.html" title="Digital Sandrtay" class="active nav__link"> Project2</a>
-                   <a href="stevenson-life-gift-shop.html" title="Stevenson Life Gift shop" class="nav__link">Project3</a>
-                   <a href="energetic-curve-line.html" title="Energetic Curve Line" class="nav__link">Project4</a>
+        <div class="theme-wrapper">
+            <header>
+                <a href="index.html" title="Homepage">
+                    <img src="images/logo.svg" alt="Logo" class="logo">
+                </a>
+                <nav>
+                    <a href="index.html" title="banner">About Me</a>
+                    <a href="index.html" title="Selected Projects" class="active">Projects</a>
+                    <a href="gallery.html" title="Desgin and Art Works Archives">Gallery</a>
+                    <a href="#contact" title="Resume Download">Resume</a>
                 </nav>
-        </header>
-        <div class="sidebar">
-            <ul>
-              <li>
-                <a href="#overview" title="Project Overview">Overview</a>
-              </li>
-              <li>
-                <a href="#problems" title="Problem Space">problems</a>
-              </li>
-              <li>
-                <a href="#goals" title="Project Goals">goals</a>
-              </li>
-              <li>
-                <a href="#research" title="Project Research">research</a>
-              </li>
-              <li>
-                <a href="#moodboard" title="Moodboard">moodboard</a>
-              </li>
-              <li>
-                <a href="#prototype" title="Prototype">prototype</a>
-              </li>
-              <li>
-                <a href="#reflection" title="Project Reflection">reflection</a>
-              </li>
-            </ul>
-        </div>
-        <main>
-            <div class="container">
+            </header>
+            <div class="sidebar">
+                <ul>
+                  <li>
+                    <a href="#overview" title="Project Overview">Overview</a>
+                  </li>
+                  <li>
+                    <a href="#problems" title="Problems<">Problems</a>
+                  </li>
+                  <li>
+                    <a href="#solutions" title="Project Goals">Solutions</a>
+                  </li>
+                  <li>
+                    <a href="#research" title="Project Research">Research</a>
+                  </li>
+                  <li>
+                    <a href="#prototype" title="Prototype">Prototype</a>
+                  </li>
+                  <li>
+                    <a href="#reflection" title="Project Reflection">Reflection</a>
+                  </li>
+                </ul>
+            </div>
+            <main class="container">
+              <section>
                 <div class="slider">
                     <h1 class="slider" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">Digital Sandrtay</h1>
                     <h2 class="slider" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1200" data-aos-once="true">Digital therapy solution for BC Children’s hospital (BCCH) Digital Lab, replicating the creative experience of a physical sandtray.</h2>
-                </div>
-                <iframe class="player" src="https://www.youtube-nocookie.com/embed/GJE4vTlrfdM?si=BB21tJz3qqEefnsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <ul class="key-words">
-                    <li class="role">ROLE: 3D Artist</li>
-                    <li>2024</li>
-                    <li>Blender</li>
-                    <li>Unity</li>
-                </ul>
-
-                <p class="description">This project replicates the creative experience of a physical sandtray, allowing children to place and interact with virtual objects in a simulated sandbox. It offers 8 themed environments, over 100 miniature objects for storytelling, and a creation tool for therapists to add custom assets. Players can customize avatars and miniature colors, while immersive touring ensures a truly engaging experience.</p>
-
-                <a href="https://diggity39.itch.io/sandscape" title="Digital Sandrtay Live Demo" target="_blank" class="link">
-                  <span class="mask">
-                    <div class="link-container">
-                      <span class="link-title1 title">LIVE DEMO</span>
-                      <span class="link-title2 title">LIVE DEMO</span>
-                    </div>
-                  </span>
-                  <div class="link-icon">
-                    <svg class="icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
-                      <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
-                    </svg>
-                    <svg class="icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
-                      <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
-                    </svg>
                   </div>
-                </a>
+                  <iframe class="player" src="https://www.youtube-nocookie.com/embed/GJE4vTlrfdM?si=BB21tJz3qqEefnsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </section>  
+              <section id="overview" class="overview">
+                    <div class="container is-flex">    
+                        <div class="project-intro">
+                            <h2>Brief</h2>
+                            <p class="description"><p class="description">This project replicates the creative experience of a physical sandtray, allowing children to place and interact with virtual objects in a simulated sandbox. It offers 8 themed environments, over 100 miniature objects for storytelling, and a creation tool for therapists to add custom assets. Players can customize avatars and miniature colors, while immersive touring ensures a truly engaging experience.</p> 
+                        </div>
+                        <ul class="key-words">
+                            <li>
+                                <h3 class="big-title">Timeline</h3>
+                                <p>Jan - Apr 2024 (12 weeks)</p>
+                            </li>
+                            <li>
+                                <h3 class="big-title">My Role</h3>
+                                <p>3D Artist</p>
+                            </li>
+                            <li>
+                                <h3 class="big-title">Team</h3>
+                                <p>Alexander J., Developer</p>
+                                <p>Carol T., UX/UI Designer</p>
+                                <p>Cindy C., Technical Artist</p>
+                                <p>Lan X., Developer</p>
+                                <p>Mandy L., Product Manager</p>
+                            </li>
+                            <li>
+                                <h3 class="big-title">Contribution</h3>
+                                <p>&squf; Conducted user Research</p>
+                                <p>&squf; Created 8 themed sandtray environments</p>
+                                <p>&squf; Implemented hundreds of models into unity</p>
+                            </li>
+                            <li>
+                                <h3 class="big-title">Tools</h3>
+                                <p>Blender</p>
+                                <p>Unity</p>
+                                <p>Github</p>
+                            </li>
+                            <li>
+                                <h3 class="big-title">Client</h3>
+                                <p><a href="https://www.digitallab.org/" title="BCCH Digital Lab Website" target="_blank">BC Children’s hospital (BCCH) Digital Lab</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://diggity39.itch.io/sandscape" title="Digital Sandrtay Live Demo" target="_blank" class="link">
+                      <span class="mask">
+                        <div class="link-container">
+                          <span class="link-title1 title">LIVE DEMO</span>
+                          <span class="link-title2 title">LIVE DEMO</span>
+                        </div>
+                      </span>
+                      <div class="link-icon">
+                        <svg class="icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                          <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                        </svg>
+                        <svg class="icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                          <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                        </svg>
+                      </div>
+                    </a>
+              </section>
+              <section id="problems" class="problems">
+                  <h2>Problems</h2>
+                  <p>Sandtray therapy has been a beacon of hope for many young minds grappling with traumatic experiences. However, its accessibility is often hindered by the physical limitations of the traditional sandtray setup — restricted space and the challenge of managing a large variety of assistive tools.</p>
+              </section>
+              <section id="solutions" class="solutions">
+                  <h2>Goals</h2>
+                  <p>1. Our goal is to bridge the gap between therapists and patients, offering an innovative solution that enhances the reach and effectiveness of sandtray therapy across Vancouver.</p>
+                  <p>2. Developing an interactive online experience that is functional but also immersive and engaging.</p>
+              </section>
+              <section id="research" class="research">
+                  <h2>Research</h2>
+                  
 
+            </main>
+            <footer class="ftr">
+                <div class="ftr-container is-flex"> 
+                    <div class="copyright">
+                        <p>&copy; Sep 2024 <a href="index.html" title="To Homepage"><strong>Claire Gao</strong></a> 
+                        <br>Site Design & Develope by <a href="https://github.com/ImClaireGao/Portfolio" title="Github page" target="_blank"><strong>Claire Gao</strong></a></p>
+                    </div>
+                        <div class="ftr-right">
+                            <a href="mailto:claire.gao47@gmail.com" title="Send me an email" class="email">claire.gao47@gmail.com</a>
+                            <ul class="social-icons">
+                                <li><a href="https://www.linkedin.com/in/claire-siqi-gao-70b4151b2/" title="Find me on Linkedin" target="_blank" ><img src="images/linkedin.svg" alt=" Linkdein icon" width="35px"></a></li>
+                                <li><a href="https://github.com/ImClaireGao" title="Find me on Github" target="_blank"><img src="images/github.svg" alt="Github icon" width="35px"></a></li>
+                            </ul>
+                        </div>
+                    </div>   
+            </footer>    
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
               
-            </div>
-        </main>
-        <footer>
-            
-        </footer>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          
-          {
-            const header = document.querySelector(".header");
-            let lastScrollY = window.scrollY;
+              {
+                const header = document.querySelector(".header");
+                let lastScrollY = window.scrollY;
 
-            window.addEventListener("scroll", () => {
-              if (lastScrollY < window.scrollY) {
-                header.classList.add("header--hidden");
-              } else {
-                header.classList.remove("header--hidden");
+                window.addEventListener("scroll", () => {
+                  if (lastScrollY < window.scrollY) {
+                    header.classList.add("header--hidden");
+                  } else {
+                    header.classList.remove("header--hidden");
+                  }
+
+                  lastScrollY = window.scrollY;
+                });
               }
 
-              lastScrollY = window.scrollY;
-            });
-          }
+              AOS.init();
 
-          AOS.init();
-
-        </script>
+            </script>
+          </div>
     </body>
 </html>
 
