@@ -50,6 +50,10 @@ h2 {
     padding: 2rem 0;
 }
 
+P {
+    width: 50%;
+}
+
 /*----------------------------------
 // Footer-right
 ----------------------------------*/
@@ -168,9 +172,32 @@ nav a.active{
     }
 }
 
+/*----------------------------------
+// Sidebar
+----------------------------------*/
+.sidebar {
+    align-items: left;
+    justify-content: left;
+    margin-left: 50px;
+    position: fixed;
+    display: inline-block;
+    z-index: 10;
+    padding-top: 130px;
+}
+
+.sidebar li a {
+    color: #3c2e3d;
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.sidebar li a:hover {
+    color: #d1a0ff;
+}
 
 /*----------------------------------
-// Section
+// Project Overview
 ----------------------------------*/
 
 
