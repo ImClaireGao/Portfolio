@@ -211,7 +211,7 @@ nav a.active{
 }
 
 /*----------------------------------
-// Project Overview
+// All Project Setting
 ----------------------------------*/
 #overview {
     background:#ffff;
@@ -261,6 +261,12 @@ h3 {
     margin-right: 1.2rem;
 }
 
+.key-words a {
+    font-weight: 500;
+    color: #3c2e3d;
+    border-bottom: 1px solid #5895df;
+}
+
 .role {
     color: #ffff;
     background-color: #e8622f;
@@ -274,6 +280,29 @@ h3 {
     font-weight: 500;
     color: #3c2e3d;
     border-bottom: 2px solid #5895df;
+}
+
+.other-projects {
+    margin-bottom: 6rem;
+}
+
+.other-projects ul {
+    text-align: center;
+
+}
+
+.other-projects li {
+    padding: 1.5rem 0;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1.8rem;
+    color: #3c2e3d;    
+}
+
+.other-projects li:hover {
+    transform: scale(1.1);
+    color: #d1a0ff;
 }
 
 /*----------------------------------
