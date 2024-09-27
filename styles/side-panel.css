@@ -95,11 +95,6 @@ section img {
     transform: scale(1.1);
 }
 
-.copyright strong:hover {
-    transform: scale(1.1);
-}
-
-
 
 /*----------------------------------
 // Global Navigation
@@ -214,7 +209,7 @@ nav a.active{
 // All Project Setting
 ----------------------------------*/
 #overview {
-    background:#ffff;
+    background-color: #e3eeff;
 }
 
 section P {
@@ -264,7 +259,7 @@ h3 {
 .key-words a {
     font-weight: 500;
     color: #3c2e3d;
-    border-bottom: 1px solid #5895df;
+    border-bottom: 1.5px solid #5895df;
 }
 
 .role {
@@ -292,16 +287,22 @@ h3 {
 }
 
 .other-projects li {
-    padding: 1.5rem 0;
+    padding: 1rem 0;
+}
+
+.other-projects li a{
     font-weight: 700;
     text-transform: capitalize;
     font-family: "IBM Plex Mono", monospace;
     font-size: 1.8rem;
-    color: #3c2e3d;    
+    color: #8f8390;    
 }
 
 .other-projects li:hover {
     transform: scale(1.1);
+}
+
+.other-projects li a:hover { 
     color: #d1a0ff;
 }
 
@@ -460,6 +461,7 @@ span {
     font-weight: 700;
     font-family: "IBM Plex Mono", monospace;
 }
+
 
 .ftr-right {
     flex-basis: calc(100% - 350px);
