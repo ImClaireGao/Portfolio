@@ -235,6 +235,10 @@ h3 {
     width: 60%;
 }
 
+.intro {
+    width: 90%;
+}
+
 .key-words {
     width: 75%;
     grid-row-gap: 16px;
