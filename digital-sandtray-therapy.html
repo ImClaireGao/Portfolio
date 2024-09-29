@@ -133,11 +133,11 @@
                   </div>
               </section>
               <section id="solutions" class="solutions">
-                <div class="container">
+                    <div class="container">
                         <h2>Goals</h2>
                         <p>1. Our goal is to bridge the gap between therapists and patients, offering an innovative solution that enhances the reach and effectiveness of sandtray therapy across Vancouver.</p>
                         <p>2. Developing an interactive online experience that is functional but also immersive and engaging.</p>
-                </div>
+                    </div>
               </section>
               <section id="research" class="research">
                     <div class="container">
@@ -184,21 +184,6 @@
             </footer>    
             <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
             <script>
-              
-              {
-                const header = document.querySelector(".header");
-                let lastScrollY = window.scrollY;
-
-                window.addEventListener("scroll", () => {
-                  if (lastScrollY < window.scrollY) {
-                    header.classList.add("header--hidden");
-                  } else {
-                    header.classList.remove("header--hidden");
-                  }
-
-                  lastScrollY = window.scrollY;
-                });
-              }
 
               AOS.init();
 
