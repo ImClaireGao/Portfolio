@@ -187,7 +187,7 @@ nav a.active{
 .flipbook .hard {
     background: #6a9ede!important;
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: bold;
     border: none; 
 }
@@ -209,8 +209,8 @@ nav a.active{
 }
 
 .flipbook .page small{
-    font-size: 14px;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .arrow {
