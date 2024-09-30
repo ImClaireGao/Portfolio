@@ -192,38 +192,6 @@ nav a.active{
     border: none; 
 }
 
-
-.player {
-    aspect-ratio: 16/9;
-    width: 100%;
-}
-
-.key-words {
-    display: flex;
-    text-transform: uppercase;
-    padding: 2rem 0;
-}
-
-
-.key-words li {
-    border-radius: 25px;
-    border: 2px solid #e8622f;
-    margin-right: 1.2rem;
-    padding: 0.5rem;
-}
-
-.role {
-    color: #ffff;
-    background-color: #e8622f;
-}
-
-.description {
-    width: 60%;
-    margin-bottom: 1.4rem;
-}
-
-/*--------*/
-
 .flipbook .page {
     background: white;
     display: flex;
@@ -243,6 +211,29 @@ nav a.active{
 .flipbook .page small{
     font-size: 14px;
     margin-bottom: 10px;
+}
+
+.arrow {
+    width: 25px;
+    align-content: center;
+}
+
+.advice p {
+    display: flex;
+    align-items: center;
+    margin-left: 3px
+}
+
+section h1 {
+    font-size: 1.7rem;
+    margin: 1.5rem 0;
+    font-weight: 600;
+}
+
+section p {
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+    font-weight: 400;
 }
 
 /*----Hot spot----*/
