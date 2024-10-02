@@ -230,6 +230,7 @@ h3 {
 .player {
     aspect-ratio: 16/9;
     width: 100%;
+    padding: 1.3rem 0;
 }
 
 .project-intro {
@@ -432,6 +433,28 @@ span {
     padding-bottom: 10rem;
 }
 
+
+/*----------------------------------
+// Sandtray
+----------------------------------*/
+.research p a {
+    font-style: italic;
+    font-weight: 500;
+    color: #3c2e3d;
+    border-bottom: 2px solid #5895df;
+}
+
+.prototype p a {
+    font-style: italic;
+    font-weight: 500;
+    color: #3c2e3d;
+    border-bottom: 2px solid #5895df;
+}
+
+.takeaways p {
+    margin-bottom: 1rem;
+
+}
 
 /*----------------------------------
 // Stevenson Life Gift shop
