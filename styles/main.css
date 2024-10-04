@@ -57,6 +57,7 @@ body{
 
 .ftr-right img:hover {
     transform: scale(1.1);
+    transition: .5s ease-in-out;
 }
 
 .ftr-right .social-icons {
@@ -75,10 +76,12 @@ body{
 
 .ftr-right .email:hover {
     transform: scale(1.1);
+    transition: .5s ease-in-out;
 }
 
 .copyright strong:hover {
     transform: scale(1.1);
+    transition: .5s ease-in-out;
 }
 
 /*----------------------------------
@@ -265,11 +268,6 @@ li .works .is-flex {
     transition: .5s ease-in-out;
 }
 
-
-.project-img figure:hover img {
-    transform: scale(1.1);
-    transform: scale(1.1);
-}
 
 .projects li {
     margin-bottom: 4rem;
