@@ -70,6 +70,9 @@
                           <img src="images/pixel-drawing.png" alt="" />
                         </div>
                         <div class="slide">
+                          <img src="images/grassland.png" alt="" />
+                        </div>
+                        <div class="slide">
                           <img src="images/Page_05.png" alt="" />
                         </div>
                         <div class="slide">
@@ -132,10 +135,10 @@
                   }
 
                   function updateActiveSlideNumber(markerMove, markerMaxMove) {
-                    const partWidth = markerMaxMove / 15;
+                    const partWidth = markerMaxMove / 16;
                     let currentPart = Math.round((markerMove - 70) / partWidth) + 1;
-                    currentPart = Math.min(15, currentPart);
-                    activeSlide.textContent = `${currentPart}/15`;
+                    currentPart = Math.min(16, currentPart);
+                    activeSlide.textContent = `${currentPart}/16`;
                   }
 
                   function update() {
