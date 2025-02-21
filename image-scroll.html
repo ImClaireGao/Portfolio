@@ -134,8 +134,8 @@
                   function updateActiveSlideNumber(markerMove, markerMaxMove) {
                     const partWidth = markerMaxMove / 15;
                     let currentPart = Math.round((markerMove - 70) / partWidth) + 1;
-                    currentPart = Math.min(10, currentPart);
-                    activeSlide.textContent = `${currentPart}/10`;
+                    currentPart = Math.min(15, currentPart);
+                    activeSlide.textContent = `${currentPart}/15`;
                   }
 
                   function update() {
@@ -158,7 +158,7 @@
                     requestAnimationFrame(update);
                   }
 
-                  window.addEventListener("resize", () => {
+                  window.addEventListener("load", () => {
                     maxScroll = sliderWrapper.offsetWidth - window.innerWidth;
                   });
 
