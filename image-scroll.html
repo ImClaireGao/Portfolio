@@ -46,7 +46,7 @@
                       <div class="marker">
                         <div class="grab"></div>
                       </div>
-                      <div class="active-slide">1/10/div>
+                      <div class="active-slide">1/15</div>
                 </div>
 
                 <div class="slider">
@@ -132,7 +132,7 @@
                   }
 
                   function updateActiveSlideNumber(markerMove, markerMaxMove) {
-                    const partWidth = markerMaxMove / 10;
+                    const partWidth = markerMaxMove / 15;
                     let currentPart = Math.round((markerMove - 70) / partWidth) + 1;
                     currentPart = Math.min(10, currentPart);
                     activeSlide.textContent = `${currentPart}/10`;
