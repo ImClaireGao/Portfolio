@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Space+Grotesk:wght@300..700&display=swap" >
+        <link rel="icon" type="image/svg" href="images/favicon.svg">
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/image-scroll.css">
+        <title>SCROLL SLIDER</title>
+    </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YCXKE1RN6E"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-YCXKE1RN6E');
+    </script>
+    <body>
+        <div class="theme-wrapper">
+            <header>
+                <a href="index.html" title="Homepage">
+                    <img src="images/logo.svg" alt="Logo" class="logo">
+                </a>
+                <nav>
+                    <!----<a href="index.html" title="banner">About Me</a>---->
+                    <a href="index.html" title="Selected Projects" class="active">Projects</a>
+                    <a href="gallery.html" title="Desgin and Art Works Archives">Gallery</a>
+                    <a href="claire_gao_cv.pdf" title="Resume Review" target="_blank">Resume</a>
+                </nav>
+            </header>
+            <main>
+                <div class="marker-wrapper">
+                      <div class="marker">
+                        <div class="grab"></div>
+                      </div>
+                      <div class="active-slide">1/15</div>
+                </div>
+
+                <div class="slider">
+                      <div class="slider-wrapper">
+                        <div class="slide">
+                          <img src="images/spring.png" alt="" />
+                        </div>
+                        <div class="slide">
+                          <img src="images/summer.png" alt="" />
+                        </div>
+                        <div class="slide">
+                          <img src="images/fall.png" alt="" />
+                        </div>
+                        <div class="slide">
+                          <img src="images/winter.png" alt="" />
+                        </div>
+                        <div class="slide">
+                          <img src="images/pixel-drawing.png" alt="" />
+                        </div>
+                        <div class="slide">
+                          <img src="images/game-ui.png" alt="" />
+                        </div>
+                        <div class="slide">
+                          <img src="images/Page_05.png" alt="" />
+                        </div>
+                        <div class="slide">
+                          <img src="images/Page_06.png" alt="" />
+                        </div>
+                        <div class="slide">
+                          <img src="images/Page_07.png" alt="" />
+                        </div>
+                        <div class="slide">
+                          <img src="images/Page_08.png" alt="" />
+                        </div>
+                        <div class="slide">
+                          <img src="images/Page_09.png" alt="" />
+                        </div>
+                        <div class="slide">
+                          <img src="images/Page_10.png" alt="" />
+                        </div>
+                        <div class="slide">
+                          <img src="images/Page_11.png" alt="" />
+                        </div>
+                        <div class="slide">
+                          <img src="images/Page_12.png" alt="" />
+                        </div>
+                        <div class="slide">
+                          <img src="images/Page_13.png" alt="" />
+                        </div>
+                      </div>
+                </div>
+            </main>
+            <footer class="ftr">
+                <div class="container is-flex"> 
+                    <div class="copyright">
+                        <p>&copy; Sep 2024
+                        <br>Site Design & Develope by Claire Gao</p>
+                    </div>
+                        <div class="ftr-right">
+                            <a href="mailto:claire.gao47@gmail.com" title="Send me an email" class="email">claire.gao47@gmail.com</a>
+                            <ul class="social-icons">
+                                <li><a href="https://www.linkedin.com/in/claire-siqi-gao-70b4151b2/" title="Find me on Linkedin" target="_blank" ><img src="images/linkedin.svg" alt=" Linkdein icon" width="35px"></a></li>
+                                <li><a href="https://github.com/ImClaireGao" title="Find me on Github" target="_blank"><img src="images/github.svg" alt="Github icon" width="35px"></a></li>
+                            </ul>
+                        </div>
+                    </div>   
+            </footer>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+            <script>
+                  let target = 0;
+                  let current = 0;
+                  let ease = 0.075;
+
+                  const slider = document.querySelector(".slider");
+                  const sliderWrapper = document.querySelector(".slider-wrapper");
+                  const markerWrapper = document.querySelector(".marker-wrapper");
+                  const activeSlide = document.querySelector(".active-slide");
+
+                  let maxScroll = sliderWrapper.offsetWidth - window.innerWidth;
+
+                  function lerp(start, end, factor) {
+                    return start + (end - start) * factor;
+                  }
+
+                  function updateActiveSlideNumber(markerMove, markerMaxMove) {
+                    const partWidth = markerMaxMove / 10;
+                    let currentPart = Math.round((markerMove - 70) / partWidth) + 1;
+                    currentPart = Math.min(10, currentPart);
+                    activeSlide.textContent = `${currentPart}/10`;
+                  }
+
+                  function update() {
+                    current = lerp(current, target, ease);
+
+                    gsap.set(".slider-wrapper", {
+                      x: -current,
+                    });
+
+                    let moveRatio = current / maxScroll;
+
+                    let markerMaxMove = window.innerWidth - markerWrapper.offsetWidth - 170;
+                    let markerMove = 70 + moveRatio * markerMaxMove;
+                    gsap.set(".marker-wrapper", {
+                      x: markerMove,
+                    });
+
+                    updateActiveSlideNumber(markerMove, markerMaxMove);
+
+                    requestAnimationFrame(update);
+                  }
+
+                  window.addEventListener("resize", () => {
+                    maxScroll = sliderWrapper.offsetWidth - window.innerWidth;
+                  });
+
+                  window.addEventListener("wheel", (e) => {
+                    target += e.deltaY;
+
+                    target = Math.max(0, target);
+                    target = Math.min(maxScroll, target);
+                  });
+
+                  update();
+            </script>
+    </body>
+</html>
