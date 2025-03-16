@@ -1,39 +1,3 @@
-/*-----
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
-nav,
-footer {
-  position: fixed;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  font-family: "PP Supply Sans";
-  font-size: 15px;
-  text-transform: uppercase;
-  opacity: 0.4;
-}
-
-nav > div {
-  display: flex;
-  gap: 50px;
-}
-
-footer {
-  bottom: 0;
-}
---------*/
 
 *{
     margin: 0;
