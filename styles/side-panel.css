@@ -498,45 +498,12 @@ span {
     column-count: 4
 }
 
-.link-brackets {
-  position: relative;
-  color: #000; /* text color */
-  text-decoration: none;
-  padding: 0 5px; /* space between text and brackets */
-  transition: color 0.3s ease;
+.scroll-move {
+  transform: translateY(-25px); /* Start a little higher */
+  transition: transform 0.5s ease-out;
 }
 
-.link-brackets::before,
-.link-brackets::after {
-  content: '[';
-  position: absolute;
-  opacity: 0;
-  transition: all 0.3s ease;
-}
 
-.link-brackets::after {
-  content: ']';
-}
-
-.link-brackets::before {
-  left: 0;
-  transform: translateX(-10px);
-}
-
-.link-brackets::after {
-  right: 0;
-  transform: translateX(10px);
-}
-
-.link-brackets:hover::before,
-.link-brackets:hover::after {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.link-brackets:hover {
-  color: #ff4b2b; /* hover text color */
-}
 
 
 /*----------------------------------

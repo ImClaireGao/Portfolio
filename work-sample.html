@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="styles/reset.css">
         <link rel="stylesheet" href="styles/side-panel.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <title>Skatepark</title>
+        <title>Work Sample</title>
     </head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YCXKE1RN6E"></script>
@@ -46,7 +46,7 @@
                 <section>
                     <div class="container">
                         <div class="slider">
-                            <h1>Molly Tea CA & Hey! I Am Yogost CA</h1>
+                            <h1>Hey! I Am Yogost CA & Molly Tea CA</h1>
                             <h2>Brand Campaigns and Visual Design for Online and Offline Marketing.</h2>
                         </div>
                         <div class="posts">
@@ -58,7 +58,7 @@
                                 </li>
                                 <li>
                                   <a href="https://www.instagram.com/p/DL6m75oOugF/" title="Popper Melon Slush post" target="_blank">
-                                    <img src="images/work-sample/ig02.png" alt="Instagram Post">
+                                    <img class="scroll-move" src="images/work-sample/ig02.png" alt="Instagram Post">
                                   </a>
                                 </li>
                                 <li>
@@ -68,7 +68,7 @@
                                 </li>
                                 <li>
                                   <a href="https://www.instagram.com/p/DMqu3-ahgNg/" title="Edmonton Grand opending overview" target="_blank">
-                                    <img src="images/work-sample/ig04.png" alt="Instagram Post">
+                                    <img class="scroll-move" src="images/work-sample/ig04.png" alt="Instagram Post">
                                   </a>
                                 </li>
                             </ul>    
@@ -80,7 +80,7 @@
                         <div class="is-flex">    
                             <div class="intro">
                                 <h2>Brief</h2>
-                                <p class="description">Work as a Graphic Designer and Marketing Coordinator at Hey! I Am Yogost CA & Molly Tea CA, where I am responsible for designing online and offline campaign posters, flyers, vouchers, and merchandise. I collaborate closely with the marketing manager and local print shops to ensure the production of high-quality marketing materials. Additionally, I assist in maintaining and updating the official WordPress website by designing new pages and optimizing the layout and visuals to enhance SEO performance.</p>
+                                <p class="description">Work as a Graphic Designer and Marketing Coordinator at <a href="https://www.instagram.com/yogostcanada/" title="Yogost CA IG" target="_blank">Hey! I Am Yogost CA</a> & <a href="https://www.instagram.com/mollytea_canada/" title="MollyTea CA IG" target="_blank">Molly Tea CA</a>, where I am responsible for designing online and offline campaign posters, flyers, vouchers, and merchandise. I collaborate closely with the marketing manager and local print shops to ensure the production of high-quality marketing materials. Additionally, I assist in maintaining and updating the official WordPress website by designing new pages and optimizing the layout and visuals to enhance SEO performance.</p>
                             </div>
                             <ul class="key-words">
                                 <li>
@@ -112,7 +112,7 @@
                 </section>
                 <section id="work-sample" class="work-sample">
                     <div class="container">
-                        <img src="images/work-sample/" alt="" />
+                        <img src="images/work-sample/watermelon_mockup.jpg" alt="Watermelon poster mockup" />
                         <div class="">
                             <h4 class="">Poster</h4>
                             <p class="">Popper Melon Slush</p>
@@ -158,6 +158,31 @@
 
               AOS.init();
 
+            </script>
+            <script>
+              window.addEventListener('scroll', () => {
+                const scrollY = window.scrollY;
+                const startScroll = 100;
+                const endScroll = 200; // scrollY = 200 → perfectly aligned
+                const maxMove = 25;
+
+                const range = endScroll - startScroll;
+                let offset = 0;
+
+                if (scrollY < startScroll) {
+                  offset = -maxMove;
+                } else if (scrollY > endScroll) {
+                  offset = 0;
+                } else {
+                  // interpolate between -25px and 0
+                  const progress = (scrollY - startScroll) / range;
+                  offset = -maxMove + progress * maxMove;
+                }
+
+                document.querySelectorAll('.scroll-move').forEach((img) => {
+                  img.style.transform = `translateY(${offset}px)`;
+                });
+              });
             </script>
         </div>
     </body>
