@@ -498,12 +498,34 @@ span {
     column-count: 4
 }
 
-.scroll-move {
-  transform: translateY(-25px); /* Start a little higher */
-  transition: transform 0.5s ease-out;
+.img-content {
+    flex-flow: column;
+    display: flex
 }
 
+.img-content h4 {
+    text-align: left;
+}
 
+.img-content p {
+    font-size: 2rem;
+}
+
+.work-sample {
+    grid-column-gap: 1.25rem;
+    grid-row-gap: 4.8rem;
+    flex-flow: wrap;
+    display: flex
+}
+
+.work-wrapper img {
+    column-count: 2;
+}
+
+.sticker-column {
+  display: flex;
+  gap: 2rem;
+}
 
 
 /*----------------------------------
