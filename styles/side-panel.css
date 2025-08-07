@@ -504,7 +504,9 @@ span {
 }
 
 .img-content h4 {
+    font-size: 1.5rem;
     text-align: left;
+    font-weight: 500;
 }
 
 .img-content p {
