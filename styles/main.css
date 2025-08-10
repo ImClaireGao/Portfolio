@@ -88,18 +88,18 @@ h4 {
 ----------------------------------*/
 
 header{
-    margin-top: 1.5rem;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 9%;
+    padding: 2rem 9%;
     background-color: transparent;
     filter: drop-shadow(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    backdrop-filter: blur(2px);
 }
 
 

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-CA">
-    <head>
+    <head id="top">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -176,13 +176,30 @@
                     <div class="container">
                         <h2>Discover More Projects</h2>
                         <ul>
-                            <li><a href="fnha.html" title="FNHA Website">FNHA Website</a></li>
-                            <li><a href="digital-sandtray-therapy.html" title="Digital Sandtray Therapy">Digital Sandtray Therapy</a></li>
-                            <li><a href="energetic-curve-line.html" title="Energetic Curve Line">Energetic Curve Line</a></li>
+                            <li>
+                                <a href="fnha.html" title="FNHA Website">
+                                    <img class="project-img" src="images/cover/07.png" alt="FNHA Website">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="digital-sandtray-therapy.html" title="Digital Sandtray Therapy">
+                                    <img src="images/cover/05.png" alt="Digital Sandtray Therapy">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="energetic-curve-line.html" title="Energetic Curve Line">
+                                    <img src="images/cover/09.png" alt="Energetic Curve Line">
+                                </a>
+                            </li>
                         </ul>
+                        <a href="#top" aria-label="scroll to top" class="scroll-to-top no-display"></a>  
                     </div>
                 </section>
             </main>
+            <!-- progress bar -->
+            <div class="progress-bar-container">
+              <div class="progress-bar"></div>
+            </div>
             <footer class="ftr">
                 <div class="ftr-container is-flex"> 
                     <div class="copyright">
@@ -195,10 +212,13 @@
                                 <li><a href="https://www.linkedin.com/in/claire-siqi-gao-70b4151b2/" title="Find me on Linkedin" target="_blank" ><img src="images/linkedin.svg" alt=" Linkdein icon" width="35px"></a></li>
                                 <li><a href="https://github.com/ImClaireGao" title="Find me on Github" target="_blank"><img src="images/github.svg" alt="Github icon" width="35px"></a></li>
                             </ul>
+
                         </div>
-                    </div>   
-            </footer>    
-            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                    </div>
+
+            </footer> 
+
+            
             <script>
               
             
@@ -207,30 +227,20 @@
 
             </script>
             <script>
-              window.addEventListener('scroll', () => {
-                const scrollY = window.scrollY;
-                const startScroll = 100;
-                const endScroll = 200; // scrollY = 200 → perfectly aligned
-                const maxMove = 25;
-
-                const range = endScroll - startScroll;
-                let offset = 0;
-
-                if (scrollY < startScroll) {
-                  offset = -maxMove;
-                } else if (scrollY > endScroll) {
-                  offset = 0;
-                } else {
-                  // interpolate between -25px and 0
-                  const progress = (scrollY - startScroll) / range;
-                  offset = -maxMove + progress * maxMove;
+                // Progress bar
+                function updateProgressBar() {
+                  const progressBar = document.querySelector('.progress-bar');
+                  const totalHeight = document.body.scrollHeight - window.innerHeight;
+                  const progress = (window.pageYOffset / totalHeight) * 100;
+                  progressBar.style.width = progress + '%';
                 }
 
-                document.querySelectorAll('.scroll-move').forEach((img) => {
-                  img.style.transform = `translateY(${offset}px)`;
-                });
-              });
+                updateProgressBar(); 
+                window.addEventListener('scroll', updateProgressBar);
+                window.addEventListener('resize', updateProgressBar);
+            
             </script>
+
         </div>
     </body>
 </html>
