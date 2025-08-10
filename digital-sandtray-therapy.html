@@ -186,13 +186,29 @@
                     <div class="container">
                         <h2>Discover More Projects</h2>
                         <ul>
-                            <li><a href="fnha.html" title="FNHA Website">FNHA Website</a></li>
-                            <li><a href="work-sample.html" title="Hey! I Am Yogost CA & Molly Tea CA">Hey! I Am Yogost CA & Molly Tea CA</a></li>
-                            <li><a href="energetic-curve-line.html" title="Energetic Curve Line">Energetic Curve Line</a></li>
+                            <li>
+                                <a href="fnha.html" title="Work Sample">
+                                    <img class="project-img" src="images/cover/08.png" alt="Work Sample">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="fnha.html" title="FNHA Website">
+                                    <img class="project-img" src="images/cover/07.png" alt="FNHA Website">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="energetic-curve-line.html" title="Energetic Curve Line">
+                                    <img src="images/cover/09.png" alt="Energetic Curve Line">
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </section>   
             </main>
+            <!-- progress bar -->
+            <div class="progress-bar-container">
+              <div class="progress-bar"></div>
+            </div>
             <footer class="ftr">
                 <div class="ftr-container is-flex"> 
                     <div class="copyright">
@@ -212,6 +228,20 @@
             <script>
 
               AOS.init();
+
+            </script>
+            <script>
+                // Progress bar
+                function updateProgressBar() {
+                  const progressBar = document.querySelector('.progress-bar');
+                  const totalHeight = document.body.scrollHeight - window.innerHeight;
+                  const progress = (window.pageYOffset / totalHeight) * 100;
+                  progressBar.style.width = progress + '%';
+                }
+
+                updateProgressBar(); 
+                window.addEventListener('scroll', updateProgressBar);
+                window.addEventListener('resize', updateProgressBar);
 
             </script>
           </div>
