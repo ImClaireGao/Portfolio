@@ -534,6 +534,12 @@ span {
   gap: 2rem;
 }
 
+.ig-story-column {
+    display: flex;
+    gap: 4rem;
+}
+
+
 /*----------------------------------
 // Progress bar
 ----------------------------------*/
