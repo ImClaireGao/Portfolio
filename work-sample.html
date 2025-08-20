@@ -278,6 +278,31 @@
                 window.addEventListener('resize', updateProgressBar);
             
             </script>
+            <script>
+              window.addEventListener('scroll', () => {
+                const scrollY = window.scrollY;
+                const startScroll = 100;
+                const endScroll = 200; // scrollY = 200 → perfectly aligned
+                const maxMove = 25;
+
+                const range = endScroll - startScroll;
+                let offset = 0;
+
+                if (scrollY < startScroll) {
+                  offset = -maxMove;
+                } else if (scrollY > endScroll) {
+                  offset = 0;
+                } else {
+                  // interpolate between -25px and 0
+                  const progress = (scrollY - startScroll) / range;
+                  offset = -maxMove + progress * maxMove;
+                }
+
+                document.querySelectorAll('.scroll-move').forEach((img) => {
+                  img.style.transform = `translateY(${offset}px)`;
+                });
+              });
+            </script>
 
         </div>
     </body>
