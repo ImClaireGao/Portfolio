@@ -535,6 +535,29 @@ span {
 }
 
 /*----------------------------------
+// About
+----------------------------------*/
+.two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 2fr);
+    margin-top: -45px;
+    padding-bottom: 50px
+}
+
+.about-img img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    position: relative;
+    width: 80%;
+}
+
+.short-about {
+    width: 90%;
+    padding-bottom: 3.3rem;
+}
+
+/*----------------------------------
 // Progress bar
 ----------------------------------*/
 
