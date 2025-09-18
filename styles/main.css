@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
     text-decoration: none;
     border: none;
     outline: none;
@@ -60,21 +60,20 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 2rem;
-    background-color: rgba(251, 248, 245, 0.9);
-    backdrop-filter: blur(10px);
+    padding: 2rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
-    transition: all 0.3s ease;
+    z-index: 100;
+    backdrop-filter: blur(2px);
 }
 
 .logo {
-    width: 60px;
-    height: auto;
+    width: 18%;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: 0.5s ease;
 }
 
 .logo:hover {
@@ -82,18 +81,19 @@ header {
 }
 
 nav {
+    flex-basis: calc(100% - 36px);
+    max-width: calc(100% - 38px);
     display: flex;
-    gap: 3rem;
-    align-items: center;
+    justify-content: flex-end;
 }
 
 nav a {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     color: #3c2e3d;
-    font-weight: 600;
-    transition: all 0.3s ease;
+    margin-left: 4rem;
+    font-weight: 700;
+    transition: 0.3s ease;
     border-bottom: 3px solid transparent;
-    padding: 0.5rem 0;
 }
 
 nav a:hover,
@@ -103,36 +103,34 @@ nav a.active {
     font-style: italic;
 }
 
-/* Mobile Navigation */
-@media (max-width: 768px) {
-    header {
-        padding: 1.5rem 2rem;
-    }
-    
-    .logo {
-        width: 50px;
-    }
-    
+@media (max-width: 995px) {
     nav {
-        gap: 2rem;
+        position: absolute;
+        display: grid;
+        top: -30px;
+        right: 0;
+        width: 0%;
+        border-left: 0px solid #5895df;
+        border-bottom: 0px solid #5895df;
+        padding: 1rem;
+        border-top: 0.1rem solid rgba(0,0,0,0.1);
     }
-    
-    nav a {
-        font-size: 1.4rem;
-    }
-}
 
-@media (max-width: 480px) {
-    header {
-        padding: 1rem 1.5rem;
+    nav.active {
+        display: block;
     }
-    
-    nav {
-        gap: 1.5rem;
-    }
-    
+
     nav a {
-        font-size: 1.2rem;
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #5895df;
     }
 }
 
