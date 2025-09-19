@@ -262,7 +262,7 @@ h3 {
 }
 
 .key-words {
-    width: 75%;
+    width: 92%;
     grid-row-gap: 16px;
     grid-column-gap: 16px;
     grid-template-rows: auto auto;
@@ -302,7 +302,6 @@ h3 {
     color: #3c2e3d;
     border-bottom: 2px solid #5895df;
 }
-
 
 /*----------------------------------
 // Other Projects
