@@ -538,6 +538,11 @@ span {
     gap: 4rem;
 }
 
+.bundle-column {
+    display: flex;
+    gap: 3rem;
+    align-items: baseline;
+}
 
 /*----------------------------------
 // About
